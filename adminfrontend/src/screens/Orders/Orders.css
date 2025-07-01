@@ -1,0 +1,79 @@
+.order-item {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+  align-items: start;
+  gap: 30px;
+  border: 1px solid var(--theme-color);
+  padding: 20px;
+  margin: 10px 25px 20px 1px;
+  font-size: 1rem;
+  color: #505050;
+}
+
+.order-item-food,
+.order-item-name {
+  font-weight: 400;
+}
+
+.order-item-name {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.order-item-address {
+  margin-bottom: 10px;
+}
+
+.order-item select {
+  background-color: #ffe8e4;
+  border: 1px solid var(--theme-color);
+  width: max(10vw, 100px);
+  padding: 10px;
+  outline: none;
+}
+
+/* ✅ Responsive for screens up to 500px */
+@media (max-width: 500px) {
+  .order-item {
+    grid-template-columns: 1fr;
+    font-size: 0.9rem;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .order-item img {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .order-item select {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .order-item p {
+    margin: 4px 0;
+  }
+}
+
+/* ✅ Further adjustment for screens up to 400px */
+@media (max-width: 400px) {
+  .order-item {
+    padding: 10px;
+    font-size: 0.85rem;
+    gap: 10px;
+  }
+
+  .order-item img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .order-item select {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+}

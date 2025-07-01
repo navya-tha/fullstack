@@ -1,0 +1,63 @@
+.screen {
+  width: 78%;
+  margin: 50px 50px 50px 30px;
+  color: #6d6d6d;
+  font-size: 1.6rem;
+}
+
+.container {
+  place-self: center;
+  width: max(40%, 300px);
+  border: 1px solid var(--theme-color);
+  border-radius: 2%;
+  padding: 20px;
+}
+
+.screen form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-img-upload img {
+  width: 120px;
+  cursor: pointer;
+}
+
+.add-category {
+  min-width: 125px;
+}
+
+.add-product-name input,
+.add-product-description textarea,
+.add-price input,
+.add-category select {
+  padding: 8px; 
+  border: 1px solid var(--theme-color);
+  border-radius: 5px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.add-product-description textarea {
+  resize: none;
+}
+
+.add-btn {
+  max-width: 120px;
+  padding: 8px 10px; 
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-category-price {
+  display: flex;
+  gap: 20px; 
+}
+
+.add-price input {
+  width: 100%;
+}

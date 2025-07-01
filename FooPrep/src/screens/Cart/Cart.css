@@ -1,0 +1,359 @@
+.cart-items {
+  max-width: 1000px;
+  margin: 20px auto;              
+  padding: 10px;                  
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 2fr;
+  font-weight: bold;
+  font-size: 15px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 6px;
+  padding: 4px 0;
+}
+
+.cart-items-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 2fr;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4px;
+  padding: 4px 0;
+}
+
+.food-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.cart-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.cart-counter img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.cart-counter img:hover {
+  transform: scale(1.1);
+}
+
+.cart-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.cart-total {
+  flex: 1;
+  min-width: 280px;
+  background-color: #f4f0fa;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.cart-total h2 {
+  margin-bottom: 14px;
+  font-size: 18px;
+  color: #3d2352;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 17px;
+}
+
+.cart-total button {
+  width: 100%;
+  padding: 8px;
+  background-color: #6d4c9e;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  margin-top: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-total button:hover {
+  background-color: #5a3e84;
+}
+
+/* ✅ Customization Section Styles */
+/* ✅ Customization Section Styles (Updated) */
+.customization-row {
+  grid-column: 2 / span 1;   /* Align under the "Title" column */
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -4px;
+  margin-bottom: 10px;
+  padding-left: 60px;
+}
+
+.customization-options {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.customization-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  background-color: #f7f5fb;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #cfc2e0;
+  transition: background-color 0.2s ease;
+}
+
+
+.delivery-estimate {
+  margin-top: 20px;
+  background-color: #e9ffe9;
+  border: 1px solid #b2f0b2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 128, 0, 0.1);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.delivery-estimate p {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #7c4dff;
+}
+
+.cart-promocode {
+  flex: 0.6;
+  min-width: 220px;
+  background-color: #f4f0fa;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.cart-promocode p {
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+
+.cart-promocode-input {
+  display: flex;
+  gap: 6px;
+}
+
+.cart-promocode-input input {
+  flex: 1;
+  padding: 8px;
+  font-size: 17px;
+  border: 1px solid #c2bcd6;
+  border-radius: 6px;
+}
+
+.cart-promocode-input button {
+  padding: 8px 12px;
+  font-size: 17px;
+  background-color: #6d4c9e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart-promocode-input button:hover {
+  background-color: #5a3e84;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 6px 0;
+}
+
+/* ✅ UPDATED SECTION FOR NOTE */
+
+.note-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px; /* ← remove extra space */
+  padding-top: 0;   /* ← remove padding if any */
+}
+
+
+.note-box-global {
+  width: 100%;
+  max-width: 600px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.note-box-global label {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3d2352;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.note-box-global textarea {
+  width: 100%;
+  height: 32px;                 /* 👈 Force small height */
+  min-height: unset;
+  max-height: 32px;
+  font-size: 1.5rem;
+  padding: 4px 8px;
+  border: 1px solid #c2bcd6;
+  border-radius: 6px;
+  resize: vertical;                /* 👈 Disable resizing */
+  overflow: hidden;            /* 👈 Prevent scrollbars */
+  line-height: 1.2;
+  font-family: inherit;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1050px) {
+  .cart-items-title,
+  .cart-items-item,
+  .customization-row {
+    grid-template-columns: 1.2fr 2fr 1fr 1fr 1fr 2fr;
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .cart-total,
+  .cart-promocode {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cart-items-title,
+  .cart-items-item,
+  .customization-row {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .customization-options {
+    flex-direction: column;
+    font-size: 1.3rem;
+    gap: 12px;
+  }
+
+  .food-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .note-box-global textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cart-items-title,
+  .cart-items-item,
+  .customization-row {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 12px;
+    gap: 4px;
+  }
+
+  .customization-options {
+    font-size: 1.1rem;
+  }
+
+  .cart-counter {
+    flex-direction: column;
+  }
+
+  .cart-total h2,
+  .cart-total-details,
+  .cart-promocode p {
+    font-size: 14px;
+  }
+
+  .cart-promocode-input input {
+    font-size: 14px;
+  }
+
+  .cart-promocode-input button {
+    font-size: 14px;
+  }
+
+  .delivery-estimate p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cart-items-title,
+  .cart-items-item,
+  .customization-row {
+    grid-template-columns: 1fr 1fr;
+    font-size: 11px;
+  }
+
+  .customization-options {
+    font-size: 1rem;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .note-box-global {
+    padding: 8px;
+  }
+
+  .note-box-global label {
+    font-size: 1.2rem;
+  }
+
+  .note-box-global textarea {
+    font-size: 13px;
+  }
+
+  .cart-total button,
+  .cart-promocode-input button {
+    font-size: 13px;
+  }
+
+  .delivery-estimate p {
+    font-size: 1.3rem;
+  }
+}

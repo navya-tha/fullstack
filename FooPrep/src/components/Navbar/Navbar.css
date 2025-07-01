@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dancing Script', cursive;
+  color: #924c9d;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  background-color: #fff;
+  z-index: 1200;
+  position: relative;
+}
+
+.brand-name {
+  font-size: 5rem;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 1000;
+  line-height: 3rem;
+  white-space: nowrap;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navbar-menu li {
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 4px 8px;
+  transition: 0.3s;
+}
+
+.navbar-menu .active {
+  border-bottom: 2px solid #924c9d;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-basket-icon {
+  position: relative;
+}
+
+.navbar-basket-icon img {
+  width: 28px;
+}
+
+.navbar-basket-icon .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #E6E6FA;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  border: 1px solid #924c9d;
+}
+
+button {
+  font-size: 1rem;
+  padding: 6px 14px;
+  background-color: transparent;
+  border: 2px solid #924c9d;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #924c9d;
+  color: white;
+}
+
+.sign-in-btn {
+  font-size: 1.4rem;
+  padding: 10px 24px;
+  border-radius: 25px;
+}
+
+.navbar-profile {
+  position: relative;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.navbar-profile img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.nav-profile-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  width: 160px;
+  border-radius: 6px;
+  z-index: 1100;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.nav-profile-dropdown li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-profile-dropdown li:hover {
+  background-color: #f3e5f5;
+}
+
+.nav-profile-dropdown img {
+  width: 20px;
+}
+
+.nav-profile-dropdown hr {
+  border: 0.5px solid #eee;
+  margin: 5px 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 1050px) {
+  .brand-name { font-size: 4rem; }
+  .navbar-menu li { font-size: 2rem; }
+  .navbar-basket-icon img { width: 24px; }
+  .navbar-profile img { width: 32px; }
+  .navbar { padding: 16px 30px; }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .brand-name {
+    font-size: 3.5rem;
+    line-height: 2.2rem;
+    text-align: center;
+  }
+
+  .navbar-menu {
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .navbar-menu li {
+    font-size: 1.5rem;
+  }
+
+  .navbar-basket-icon img {
+    width: 22px;
+  }
+
+  .navbar-profile img {
+    width: 32px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 5px 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .brand-name { font-size: 3rem; text-align: center; }
+  .navbar-menu li { font-size: 1.2rem; }
+  .navbar-basket-icon img { width: 20px; }
+  .navbar-profile img { width: 25px; }
+
+  button {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  .navbar { padding: 12px 18px; }
+}
+
+@media (max-width: 400px) {
+  .brand-name { font-size: 3.5rem; text-align: center; }
+  .navbar { padding: 10px 15px; gap: 12px; }
+  .navbar-menu {
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar-menu li { font-size: 1.5rem; }
+  .navbar-basket-icon img { width: 18px; }
+  .navbar-profile img { width: 21px; }
+
+  button {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+  .sign-in-btn {
+  font-size: 1rem;
+  padding: 6px 14px;
+}
+
+}
