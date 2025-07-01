@@ -7,7 +7,7 @@ const StoreContextProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState({});
   const [food_list, setFoodList] = useState([]);
   const [token, setToken] = useState("");
-  const url = 'http://localhost:4000';
+  const url = import.meta.env.VITE_API_URL;
 
   const fetchFoodList = async () => {
     try {
